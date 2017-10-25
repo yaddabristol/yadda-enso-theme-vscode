@@ -1,0 +1,36 @@
+{
+    "name": "yaddaenso-theme-vscode",
+    "displayName": "YaddaEnso Theme",
+    "description": "vscode theme using yadda/enso colours",
+    "version": "1.0.0",
+    "publisher": "yaddabristol",
+    "scripts": {
+        "build": "node ./src/writeTheme.js"
+    },
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "icon": "icon.png",
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "YaddaEnso",
+                "uiTheme": "vs-dark",
+                "path": "./themes/yaddaenso.json"
+            },
+            {
+                "label": "YaddaEnso Classic",
+                "uiTheme": "vs-dark",
+                "path": "./legacy/YaddaEnso.tmTheme"
+            },
+            {
+                "label": "YaddaEnso Light",
+                "uiTheme": "vs",
+                "path": "./legacy/YaddaEnsoLight.tmTheme"
+            }
+        ]
+    }
+}
